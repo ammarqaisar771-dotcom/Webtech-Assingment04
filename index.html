@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DI-322 Web Technologies - Assignment 04</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="main-screen">
+    
+    <div id="editor-section">
+      <h2>Markdown Input</h2>
+      <textarea id="markdown-input" placeholder="Type your markdown here..."></textarea>
+    </div>
+
+    <div id="view-section">
+      <h2>Slide Preview</h2>
+      
+      <div id="slide-box" class="black-slide"></div>
+
+      <div class="controls">
+        <button id="left-btn">Left</button>
+        <span id="slide-count">1 / 3</span>
+        <button id="right-btn">Right</button>
+        <button id="fullscreen-btn">Full Screen</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="presentation-screen" class="hidden">
+    <div id="pres-slide-box" class="black-slide pres-slide"></div>
+    <div class="controls">
+      <button id="pres-left-btn">Left</button>
+      <span id="pres-slide-count">1 / 3</span>
+      <button id="pres-right-btn">Right</button>
+      <button id="pres-fullscreen-btn">Exit Full Screen</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
